@@ -1,0 +1,25 @@
+
+
+.fone-potrait {
+
+@include container;       
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color:  $Very-dark-blue;
+        border-radius: 0 100px 0 100px;
+        height: 22rem;
+        width: 100%;
+
+        img {
+            margin: 4rem 0 0 4rem;
+        }
+        .text-wraper {
+            padding-right: 2rem;
+        }
+    }
+}

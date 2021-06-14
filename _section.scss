@@ -1,0 +1,45 @@
+@import 'variables';
+
+main {
+    width: 80vw;
+    margin: 7rem auto; 
+    margin-bottom: 0;
+    background-color: whitesmoke;
+    padding: 2rem;
+    overflow: hidden;
+    
+    h1 {
+        text-align: center;
+        color: $blue-body-copy;
+        padding: 2rem;
+    }
+    section {
+        height: 90vh;
+        padding: 2rem 2rem 6rem 2rem;
+        max-height: 250px;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        
+    }
+
+.left-section {
+    width: 35rem;
+    height: 350px;
+    text-align: start;
+}
+
+.right-section {
+    width: 38rem;
+    height:30rem ;
+   
+    img {
+        height: 100%;
+        width: 100%;
+        margin-left: 16rem;
+    }
+   
+    
+}
+
+}

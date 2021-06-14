@@ -1,0 +1,29 @@
+
+ @mixin container {
+    height: 90vh;
+    width: 85vw;
+    background-color: whitesmoke;  
+    padding-top: 15rem;
+    margin: 0.3rem auto;
+ }
+
+$Mobile: 375px;
+$Desktop: 1440px;
+$Light-red : hsl(356, 100%, 66%);
+$Very-light-red: hsl(355, 100%, 74%);
+$Very-dark-blue: hsl(208, 49%, 24%);
+
+// Background gradient - Intro/CTA mobile nav:
+
+$Very-lightened: hsl(13, 100%, 72%);
+$Light-red: hsl(353, 100%, 62%);
+
+$text: hsl(0, 0%, 100%);
+$Gray-footer-text: hsl(240, 2%, 79%);
+$blue-body-copy: hsl(207, 13%, 34%);
+$footer-background: hsl(240, 10%, 16%);
+
+// Background gradient - body:
+$gray-blue: hsl(237, 17%, 21%);
+$dark-desaturated-blue: hsl(237, 23%, 32%);
+

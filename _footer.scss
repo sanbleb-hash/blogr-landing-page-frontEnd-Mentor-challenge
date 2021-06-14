@@ -1,0 +1,57 @@
+@import 'variables';
+
+footer {
+    width: 100vw;
+    height: 22rem;
+    background-color: $footer-background;
+    margin-bottom: 2rem;
+
+    p {
+        color: $text;
+        text-align: center;
+    }
+
+    .footer-container {
+        width: 70vw;
+        margin: 0 auto;
+        color: $text;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        
+
+        h1 {
+            font-size: xx-large;
+            margin-bottom: 5rem;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: $text;
+            line-height: 1.6;
+            transition: border-bottoms 3s ease-in-out;
+
+            &:hover,:active {
+                border-bottom: solid 1px $text;
+            }
+
+        }
+
+        .products {
+            padding-top: 4rem
+
+        }
+        .company {
+            padding-top: 3rem
+        }
+        .connect {
+            padding-top: 2rem;
+        }
+    }
+
+}

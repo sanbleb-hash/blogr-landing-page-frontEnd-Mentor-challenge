@@ -1,0 +1,39 @@
+@import 'variables';
+
+
+.laptop-potrait {
+    @include container;
+    height: 70vh;
+    
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 22rem;
+        width: 100%;
+        color: $Very-dark-blue;
+              
+
+        .image-wraper {
+            margin-bottom: 10rem;
+
+
+            img {
+                
+                height: 100%;
+                width: 100%;
+               
+                            
+                               
+            }
+        }
+        .text-wraper {
+            width: 40rem;
+            padding: 2rem;
+            margin-bottom: 10rem;          
+            
+        }
+    }
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@500;700&display=swap');
+
+@import "../section";
+@import '../variables';
+@import '../fone-illustration';
+@import '../laptop-layout';
+@import '../footer';
+@import '../login';
+@import '../accodion';
+
+
+@mixin before {
+
+      &:before {
+          content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         background-image: linear-gradient(to right, $Very-lightened, $Light-red);
+         opacity: 0.9;
+         height: 70vh;
+         border-radius: 0 0 0 100px;
+      
+  
+
+    }
+
+  
+}
+   
+
+body, html {
+    font-family: 'Overpass', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+
+   header {
+       height: 70vh;
+       width: 100vw;
+       @include before;
+       opacity: 0.8;       
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: 115rem;
+       background-image: url(../images/bg-pattern-intro.svg);
+   }
+
+
+   .container {
+            width: 80vw;
+            margin: 0 auto;
+            color: $text;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+.contents, .signin-btn, .showcase {
+    position: relative;
+    z-index: 0.8;
+}
+.contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+
+    h1 {
+        cursor: pointer;
+        font-size: xx-large;
+    }
+
+    .right-content, ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+    li {
+        list-style: none;
+        padding: 1.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    li a {
+        margin-right: 0.7rem;
+        cursor: pointer;
+
+        &:hover, :active {
+            border-bottom: 1px solid $text;
+        }
+        
+    }
+    .toggle {
+        display: none;
+    }
+}
+
+.signin-btn  {
+    button {
+        padding: 0.7rem;
+        background-color: $text;
+        width: 7rem;
+        color: $Light-red;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &.open-btn {
+            color: $text;
+            background: transparent;
+            transition: all 0.3s ease-in-out;
+
+            &:hover, :active {
+                border: 1px solid $text;
+                background-color: opacify($Very-light-red, 0.6);
+        
+            }
+            
+        }
+    }
+}
+
+.btn, .learn-more-btn{
+    padding: 0.7rem;
+        background-color: $text;
+        width: 7rem;
+        color: $Light-red;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover, :active {
+            opacity: 0.6;
+        }
+
+}
+
+.learn-more-btn {
+    background: $Very-light-red;
+    border: 1px solid $text;
+    margin-left: 1rem;
+    color: $text;
+
+    
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        margin-bottom: 2rem ;
+    }
+}
