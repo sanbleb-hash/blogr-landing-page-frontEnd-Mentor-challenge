@@ -22,4 +22,15 @@
             padding-right: 2rem;
         }
     }
+
+    @media screen and (max-width: 525px) {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+    }
 }

@@ -22,9 +22,15 @@
          opacity: 0.9;
          height: 70vh;
          border-radius: 0 0 0 100px;
-      
+         
+        
   
 
+    }
+    @media  screen and (max-width: 525px) {
+        &:before {
+            height: 100vh;
+        }            
     }
 
   
@@ -47,6 +53,16 @@ body, html {
        background-repeat: no-repeat;
        background-size: 115rem;
        background-image: url(../images/bg-pattern-intro.svg);
+
+   }
+
+   @media screen and (max-width: 525px) {
+       header {
+           height: 100vh;
+           border-radius: 0 0 0 100px;
+           width: 100%;   
+           overflow: hidden; 
+       }     
    }
 
 
@@ -59,10 +75,30 @@ body, html {
             justify-content: space-between;
             flex-direction: column;
         }
-.contents, .signin-btn, .showcase {
+
+    .contents, .signin-btn, .showcase {
     position: relative;
     z-index: 0.8;
+
+   
 }
+
+@media screen and (max-width: 525px){
+    .right-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+}
+
+@media screen and ( max-width: 525px) {
+    .nav-elements {
+        display: none;
+    }    
+}
+
+
 .contents {
     display: flex;
     justify-content: space-between;
@@ -80,11 +116,14 @@ body, html {
     align-items: center;
     justify-content: center;
 
+
     }
     li {
         list-style: none;
         padding: 1.5rem;
         transition: all 0.3s ease-in-out;
+
+       
     }
     li a {
         margin-right: 0.7rem;
@@ -126,10 +165,18 @@ body, html {
             
         }
     }
+
+    @media screen and (max-width: 525px) { 
+        .signin-btn {
+            padding: 0.4rem;
+            color: chartreuse;
+        }
+        
+    }
 }
 
 .btn, .learn-more-btn{
-    padding: 0.7rem;
+        padding: 0.7rem;
         background-color: $text;
         width: 7rem;
         color: $Light-red;
@@ -143,6 +190,13 @@ body, html {
         &:hover, :active {
             opacity: 0.6;
         }
+    @media screen and (max-width: 525px) { 
+        .btn, .learn-more-btn {
+            padding: 0.4rem;
+            color: chartreuse;
+        }
+        
+    }
 
 }
 
@@ -164,4 +218,20 @@ body, html {
     p{
         margin-bottom: 2rem ;
     }
+}
+@media  screen and (max-width:525px) {
+    .showcase {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 span, p span{
+           display: block;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+        
+    }        
 }

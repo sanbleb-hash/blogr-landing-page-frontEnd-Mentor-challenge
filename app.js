@@ -20,10 +20,12 @@ minModal();
 
 const minNavs = function (){
 
-    const downArrow = document.querySelectorAll('.fa-chevron-down');
+    const downArrow = document.querySelectorAll('.product');
     const boom = document.querySelectorAll('.accodion');
 
-    downArrow.style.display = 'block';
+    downArrow.addEventListener('mouseover', ()=> {
+        console.log('well well')
+    })
 
 };
 minNavs();
